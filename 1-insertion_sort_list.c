@@ -11,7 +11,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *start_node, *start_node_tmp;
 
-	if (is_less_than_2_nodes(*list))
+	if (list == NULL || is_less_than_2_nodes(*list))
 		return;
 
 	start_node = (*list)->next; /* begin from 2nd node */
