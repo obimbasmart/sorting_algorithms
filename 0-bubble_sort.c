@@ -38,3 +38,4 @@ void swap_elements(int *array, size_t index_1, size_t index_2)
 	array[index_1] = array[index_2];
 	array[index_2] = temporary_integer;
 }
+
