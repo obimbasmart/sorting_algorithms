@@ -34,3 +34,18 @@ void selection_sort(int *array, size_t size)
 	}
 }
 
+/**
+ * swap_elements - swap two elements based on index
+ * @array: pointer to original array
+ * @index_1: the first element index
+ * @index_2: the second element index
+ *
+ * Return: nothing
+ */
+void swap_elements(int *array, size_t index_1, size_t index_2)
+{
+	int temporary_integer = array[index_1];
+
+	array[index_1] = array[index_2];
+	array[index_2] = temporary_integer;
+}
