@@ -76,10 +76,10 @@ int partition(int *array, int start_index, int end_index, size_t size)
  */
 void swap_elements(int *array, size_t index_1, size_t index_2)
 {
+	int temporary_integer = array[index_1];
+
 	if (index_1 == index_2)
 		return;
-
-	int temporary_integer = array[index_1];
 
 	array[index_1] = array[index_2];
 	array[index_2] = temporary_integer;
