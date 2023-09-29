@@ -57,12 +57,20 @@ int partition(int *array, int start_index, int end_index, size_t size)
 	{
 		if (array[index] <= pivot)
 		{
-			swap_elements(array, index, partition_index);
+			if (partition_index != index) /* check if swap is neccessary */
+			{
+				swap_elements(array, index, partition_index);
+				print_array(array, size);
+			}
 			partition_index += 1;
 		}
 	}
-	swap_elements(array, end_index, partition_index);
-	print_array(array, size);
+
+	if (end_index != partition_index) /* check if swap is neccessary */
+	{
+		swap_elements(array, end_index, partition_index);
+		print_array(array, size);
+	}
 	return (partition_index);
 }
 
