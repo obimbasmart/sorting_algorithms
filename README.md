@@ -1,9 +1,9 @@
 # C - Sorting algorithms & Big O
 
-This project provided an excellent introduction to the concepts of sorting and Big O notation, offering a valuable opportunity to delve into how algorithms are assessed based on their time and space complexities. Within this project, I successfully implemented four fundamental sorting algorithms: bubble sort, insertion sort, selection sort, and quick sort. It was an engaging experience, with quick sort posing a particular challenge that required additional effort to comprehend thoroughly.
+> This project provided an excellent introduction to the concepts of sorting and Big O notation, offering a valuable opportunity to delve into how algorithms are assessed based on their time and space complexities. Within this project, I successfully implemented four fundamental sorting algorithms: bubble sort, insertion sort, selection sort, and quick sort. It was an engaging experience, with quick sorting posing a particular challenge that required additional effort to comprehend thoroughly.
 
-> # Big O
-> The big O notation is a way of determing how fast (time complexity) an algorithm would take to provide deseired ouput for a given input. To demostrate the commmon known time complexity, consider the following:
+<details><summary><h2>Big O</h2></summary>
+        The big O notation is a way of determining how fast (time complexity) an algorithm would take to provide the desired output for a given input. To demonstrate the common known time complexity, consider the following:
 
 ```python
 def function print_name(my_name):
@@ -16,7 +16,7 @@ def print_students(lists_of_students):
     for student in list_of_students:
         print(student)
 ```
-- The number of times the print function is called depends on the number of students in the list_of_student object. Hence the more the bigger the list, the more time it takes to print all the students' names. Hence we say the time complexity of such algorithm is `linear time` := `O(n)`
+- The number of times the print function is called depends on the number of students in the list_of_student object. Hence the more the bigger the list, the more time it takes to print all the students' names. Hence we say the time complexity of such an algorithm is `linear time` := `O(n)`
 
 ```python
 def print_students(lists_of_students):
@@ -37,8 +37,10 @@ def print_numbers(last_number = 100):
 
 The provided code generates a sequence of numbers from 0 up to a specified last_number. It's important to note that within the while loop, the variable num is doubled in each iteration, resulting in a rapidly increasing sequence: `1, 2, 4, 8, 16, 32 ...`.  This behavior characterizes an algorithm with a `logarithmic time complexity`, denoted as `O(logn)`, where the number of steps required is proportional to the logarithm of the input size, `n`.
 
+</details>
 
-**Note:** The best, average and worse case scenario for each sorting implementation can be found in the accompanying files: `0-O, 1-O, 2-O ...`.
+
+**Note:** The best, average and worst-case scenario for each sorting implementation can be found in the accompanying files: `0-O, 1-O, 2-O ...`.
 
 ## Mandatory
 `0-bubble_sort.c` - Write a function that sorts a doubly linked list of integers in ascending order using the Insertion sort algorithm
